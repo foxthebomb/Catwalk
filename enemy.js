@@ -3,7 +3,7 @@ class Enemy{
 		this.x = 400+pageX;
 		this.y = 0;
 		this.groundLevel = this.y;
-		this.sprite = createImg(`/games/run/resources/${src}.gif`, '');
+		this.sprite = createImg(`/resources/${src}.gif`, '');
 		this.sprite.hide();
 		this.initialSpeed = -5;
 		this.vX = 0;
