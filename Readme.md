@@ -2,7 +2,7 @@
 JS-based take on the Chrome Dinosaur Run game using p5.js
 
 ## Graphic Resources
-Created and copyright foxthebomb
+copyright foxthebomb
 
 ## Audio Resources
 Courtesy [LittleRobotSoundFactory](https://freesound.org/people/LittleRobotSoundFactory/)
