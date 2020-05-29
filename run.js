@@ -13,8 +13,8 @@ this.focus();
 
 function preload(){
 bg = new Background();
-jump = loadSound('/games/run/resources/audio/jump.wav');
-chime = loadSound('/games/run/resources/audio/chime.wav');
+jump = loadSound('/resources/audio/jump.wav');
+chime = loadSound('/resources/audio/chime.wav');
 }
 
 function setup(){
@@ -26,7 +26,7 @@ frameRate(60);
 bg.changeSpeed(2);
 player = new Player(pageX+25, 400);
 controller = new EnemyController();
-screen = createImg(`/games/run/resources/title.png`, '');
+screen = createImg(`/resources/title.png`, '');
 screen.position(pageX, 0);
 jump.setVolume(0.2);
 chime.setVolume(0.5);
@@ -45,7 +45,7 @@ function begin(){
 	bg.reset();
 
 	screen.hide();
-	screen.elt.src = `/games/run/resources/gameover.png`;
+	screen.elt.src = `/resources/gameover.png`;
 	loop();
 }
 
