@@ -1,9 +1,9 @@
 class Sprite{
 
 constructor(name, x=0, y=0, speed, cycle=false){
-	this.defaultLeft = loadImage(`/games/run/resources/${name}.png`);
+	this.defaultLeft = loadImage(`/resources/${name}.png`);
 	this.left = this.defaultLeft;
-	this.right = loadImage(`/games/run/resources/${name}2.png`);
+	this.right = loadImage(`/resources/${name}2.png`);
 	this.width = 400;
 	this.xL = x;
 	this.xR = this.xL + this.width;
