@@ -3,7 +3,7 @@ class Player{
 		this.x = x;
 		this.y = y;
 		this.groundLevel = y;
-		this.sprite = createImg(`/games/run/resources/cat3.gif`, '');
+		this.sprite = createImg(`/resources/cat3.gif`, '');
 		this.gravity = 1;
 		this.vY = 0;
 		this.sprite.hide();
@@ -13,7 +13,7 @@ class Player{
 jump(){
 	if (this.y == height - this.sprite.height*1.25){
 		this.vY = -15;
-		this.sprite.src = `/games/run/resources/cat3.gif`;
+		this.sprite.src = `/resources/cat3.gif`;
 		jump.play();
 	}
 }
@@ -41,9 +41,9 @@ show(){
 	this.sprite.show();
 	this.sprite.position(this.x, this.y);
 	if (this.vY < 0) 
-		this.sprite.elt.src = `/games/run/resources/cat_jump.png`;
+		this.sprite.elt.src = `/resources/cat_jump.png`;
 	if (this.vY > 10 && !this.sprite.elt.src.includes(`cat3.gif`)) {
-		this.sprite.elt.src = `/games/run/resources/cat3.gif`;
+		this.sprite.elt.src = `/resources/cat3.gif`;
 	}
 }
 }
